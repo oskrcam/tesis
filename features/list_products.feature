@@ -10,3 +10,9 @@ Feature: List products
     And the user signed in as a professor
     When he visits the page for listing its products
     Then he should see a list of 10 products
+
+  Scenario: List two products
+    Given there are 2 products for thesis with thesis_id 202
+    And the user signed in as a professor
+    When he visits the page for listing its products
+    Then he should see a list of 2 products
